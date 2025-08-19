@@ -1,0 +1,14 @@
+@import './variables.scss';
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// 响应式样式
+@media (max-width: $breakpoint-md) {
+  .app {
+    font-size: 0.875rem;
+  }
+} 

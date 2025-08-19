@@ -1,0 +1,35 @@
+@import '@/styles/variables.scss';
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .layout-content {
+    display: flex;
+    flex: 1;
+    position: relative;
+  }
+
+  .main-content {
+    flex: 1;
+    padding: $spacing-lg;
+    transition: margin-left $transition-normal;
+    overflow: hidden;
+
+    @media (max-width: $breakpoint-md) {
+      padding: $spacing-md;
+      margin-left: 0 !important;
+    }
+  }
+
+  &.sidebar-open {
+    .main-content {
+      margin-left: 250px;
+
+      @media (max-width: $breakpoint-md) {
+        margin-left: 0;
+      }
+    }
+  }
+} 
