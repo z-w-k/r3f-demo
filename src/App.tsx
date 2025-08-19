@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom'
-import { Canvas } from '@react-three/fiber'
 import { Suspense } from 'react'
 import Layout from './components/Layout/Layout'
 import Home from './pages/Home/Home'

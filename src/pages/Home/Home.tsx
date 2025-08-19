@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
-import { useAppStore } from '@/stores/useAppStore'
+// import { useAppStore } from '@/stores/useAppStore'
 import './Home.scss'
 
 const Home = () => {
-  const { theme } = useAppStore()
+  // const { theme } = useAppStore()
 
   const features = [
     {
